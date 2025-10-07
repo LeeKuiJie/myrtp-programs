@@ -1,0 +1,3 @@
+[submodule "my-submodule"]
+	path = CProgramming/c-day-1-LeeKuiJie
+	url = https://github.com/oti-training/c-day-1-LeeKuiJie.git
