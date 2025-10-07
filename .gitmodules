@@ -1,3 +1,9 @@
 [submodule "my-submodule"]
 	path = CProgramming/c-day-1-LeeKuiJie
 	url = https://github.com/oti-training/c-day-1-LeeKuiJie.git
+	path = CProgramming/c-dat-2-LeeKuiJie
+	url = https://github.com/oti-training/c-day-2-LeeKuiJie.git
+	path = python-day-4-individual-breached-password-checker-LeeKuiJie
+	url = https://github.com/oti-training/python-day-4-individual-breached-password-checker-LeeKuiJie
+	path = python-day-5-example
+	url = https://github.com/oti-training/python-day-5-example
