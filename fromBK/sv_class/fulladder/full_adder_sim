@@ -1,0 +1,119 @@
+#! /usr/bin/vvp
+:ivl_version "10.3 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "system";
+:vpi_module "vhdl_sys";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_0x558e138a0270 .scope module, "full_adder_tb" "full_adder_tb" 2 1;
+ .timescale 0 0;
+v0x558e138b6fc0_0 .var "a_tb", 0 0;
+v0x558e138b7080_0 .var "b_tb", 0 0;
+v0x558e138b7120_0 .var "cin_tb", 0 0;
+v0x558e138b7220_0 .net "cout_tb", 0 0, L_0x558e138b7970;  1 drivers
+v0x558e138b72f0_0 .var/i "i", 31 0;
+v0x558e138b7390_0 .net "sum_tb", 0 0, L_0x558e138b7570;  1 drivers
+S_0x558e138a03f0 .scope module, "dut" "full_adder" 2 10, 3 1 0, S_0x558e138a0270;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "a"
+    .port_info 1 /INPUT 1 "b"
+    .port_info 2 /INPUT 1 "cin"
+    .port_info 3 /OUTPUT 1 "sum"
+    .port_info 4 /OUTPUT 1 "cout"
+L_0x558e138b7430 .functor XOR 1, v0x558e138b6fc0_0, v0x558e138b7080_0, C4<0>, C4<0>;
+L_0x558e138b7570 .functor XOR 1, L_0x558e138b7430, v0x558e138b7120_0, C4<0>, C4<0>;
+L_0x558e138b76d0 .functor AND 1, v0x558e138b6fc0_0, v0x558e138b7080_0, C4<1>, C4<1>;
+L_0x558e138b7740 .functor XOR 1, v0x558e138b6fc0_0, v0x558e138b7080_0, C4<0>, C4<0>;
+L_0x558e138b7900 .functor AND 1, v0x558e138b7120_0, L_0x558e138b7740, C4<1>, C4<1>;
+L_0x558e138b7970 .functor OR 1, L_0x558e138b76d0, L_0x558e138b7900, C4<0>, C4<0>;
+v0x558e1388f870_0 .net *"_s0", 0 0, L_0x558e138b7430;  1 drivers
+v0x558e138b6890_0 .net *"_s4", 0 0, L_0x558e138b76d0;  1 drivers
+v0x558e138b6970_0 .net *"_s6", 0 0, L_0x558e138b7740;  1 drivers
+v0x558e138b6a30_0 .net *"_s8", 0 0, L_0x558e138b7900;  1 drivers
+v0x558e138b6b10_0 .net "a", 0 0, v0x558e138b6fc0_0;  1 drivers
+v0x558e138b6c20_0 .net "b", 0 0, v0x558e138b7080_0;  1 drivers
+v0x558e138b6ce0_0 .net "cin", 0 0, v0x558e138b7120_0;  1 drivers
+v0x558e138b6da0_0 .net "cout", 0 0, L_0x558e138b7970;  alias, 1 drivers
+v0x558e138b6e60_0 .net "sum", 0 0, L_0x558e138b7570;  alias, 1 drivers
+    .scope S_0x558e138a0270;
+T_0 ;
+    %vpi_call 2 23 "$dumpfile", "full_adder.vcd" {0 0 0};
+    %vpi_call 2 24 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x558e138a0270 {0 0 0};
+    %pushi/vec4 0, 0, 32;
+    %store/vec4 v0x558e138b72f0_0, 0, 32;
+T_0.0 ;
+    %load/vec4 v0x558e138b72f0_0;
+    %cmpi/s 8, 0, 32;
+    %jmp/0xz T_0.1, 5;
+    %load/vec4 v0x558e138b72f0_0;
+    %ix/load 4, 2, 0;
+    %flag_set/imm 4, 0;
+    %shiftr 4;
+    %pushi/vec4 1, 0, 32;
+    %and;
+    %pad/s 1;
+    %store/vec4 v0x558e138b6fc0_0, 0, 1;
+    %load/vec4 v0x558e138b72f0_0;
+    %ix/load 4, 1, 0;
+    %flag_set/imm 4, 0;
+    %shiftr 4;
+    %pushi/vec4 1, 0, 32;
+    %and;
+    %pad/s 1;
+    %store/vec4 v0x558e138b7080_0, 0, 1;
+    %load/vec4 v0x558e138b72f0_0;
+    %pushi/vec4 1, 0, 32;
+    %and;
+    %pad/s 1;
+    %store/vec4 v0x558e138b7120_0, 0, 1;
+    %delay 10, 0;
+    %vpi_call 2 36 "$display", "A=%0b, B=%0b, Cin=%0b | Sum=%0b, Cout=%0b", v0x558e138b6fc0_0, v0x558e138b7080_0, v0x558e138b7120_0, v0x558e138b7390_0, v0x558e138b7220_0 {0 0 0};
+    %load/vec4 v0x558e138b6fc0_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %load/vec4 v0x558e138b7080_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+    %load/vec4 v0x558e138b7120_0;
+    %pad/u 32;
+    %pushi/vec4 1, 0, 32;
+    %cmp/e;
+    %flag_get/vec4 4;
+    %and;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v0x558e138b7390_0;
+    %pad/u 32;
+    %cmpi/ne 1, 0, 32;
+    %flag_mov 8, 4;
+    %load/vec4 v0x558e138b7220_0;
+    %pad/u 32;
+    %cmpi/ne 1, 0, 32;
+    %flag_or 4, 8;
+    %jmp/0xz  T_0.4, 4;
+    %vpi_call 2 42 "$error", "Mismatch for A=1, B=1, Cin=0" {0 0 0};
+    %jmp T_0.5;
+T_0.4 ;
+    %vpi_call 2 44 "$display", "The computation is correct, Congratulations" {0 0 0};
+T_0.5 ;
+T_0.2 ;
+    %load/vec4 v0x558e138b72f0_0;
+    %addi 1, 0, 32;
+    %store/vec4 v0x558e138b72f0_0, 0, 32;
+    %jmp T_0.0;
+T_0.1 ;
+    %vpi_call 2 48 "$finish" {0 0 0};
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "full_adder_tb.v";
+    "Full_adder.v";

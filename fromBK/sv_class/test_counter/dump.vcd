@@ -1,0 +1,248 @@
+$date
+	Tue Sep 23 14:41:05 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module top_module $end
+$var wire 1 ! q4_bar $end
+$var wire 1 " q4 $end
+$var wire 1 # q3_bar $end
+$var wire 1 $ q3 $end
+$var wire 1 % q2_bar $end
+$var wire 1 & q2 $end
+$var wire 1 ' q1_bar $end
+$var wire 1 ( q1 $end
+$var wire 1 ) out $end
+$var reg 1 * clk $end
+$var reg 1 + rst_n $end
+$scope module dff1 $end
+$var wire 1 * clk $end
+$var wire 1 ' d $end
+$var wire 1 ' q_bar $end
+$var wire 1 + rst_n $end
+$var reg 1 ( q $end
+$upscope $end
+$scope module dff2 $end
+$var wire 1 ( clk $end
+$var wire 1 % d $end
+$var wire 1 % q_bar $end
+$var wire 1 + rst_n $end
+$var reg 1 & q $end
+$upscope $end
+$scope module dff3 $end
+$var wire 1 & clk $end
+$var wire 1 # d $end
+$var wire 1 # q_bar $end
+$var wire 1 + rst_n $end
+$var reg 1 $ q $end
+$upscope $end
+$scope module dff4 $end
+$var wire 1 $ clk $end
+$var wire 1 ! d $end
+$var wire 1 ! q_bar $end
+$var wire 1 + rst_n $end
+$var reg 1 " q $end
+$upscope $end
+$scope module my_nand_gate $end
+$var wire 1 ( A $end
+$var wire 1 & B $end
+$var wire 1 , C $end
+$var wire 1 - D $end
+$var wire 1 ) Y $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1-
+1,
+0+
+0*
+1)
+0(
+1'
+0&
+1%
+0$
+1#
+0"
+1!
+$end
+#5
+1*
+#10
+0*
+1+
+#15
+0!
+0-
+1"
+0#
+0,
+1$
+1)
+0%
+1&
+0'
+1(
+1*
+#20
+0*
+#25
+1'
+0(
+1*
+#30
+0*
+#35
+1%
+0&
+0'
+1(
+1*
+#40
+0*
+#45
+1'
+0(
+1*
+#50
+0*
+#55
+1#
+1,
+0$
+0%
+1&
+0'
+1(
+1*
+#60
+0*
+#65
+1'
+0(
+1*
+#70
+0*
+#75
+1%
+0&
+0'
+1(
+1*
+#80
+0*
+#85
+1'
+0(
+1*
+#90
+0*
+#95
+1!
+1-
+0"
+0#
+0,
+1$
+0%
+1&
+0'
+1(
+1*
+#100
+0*
+#105
+1'
+0(
+1*
+#110
+0*
+#115
+1%
+0&
+0'
+1(
+1*
+#120
+0*
+#125
+1'
+0(
+1*
+#130
+0*
+#135
+0)
+1#
+1,
+0$
+0%
+1&
+0'
+1(
+1*
+#140
+0*
+#145
+1)
+1'
+0(
+1*
+#150
+0*
+#155
+1%
+0&
+1)
+0'
+1(
+1*
+#160
+0*
+#165
+1'
+0(
+1*
+#170
+0*
+#175
+0!
+0-
+1"
+0#
+0,
+1$
+1)
+0%
+1&
+0'
+1(
+1*
+#180
+0*
+#185
+1'
+0(
+1*
+#190
+0*
+#195
+1%
+0&
+0'
+1(
+1*
+#200
+0*
+#205
+1'
+0(
+1*
+#210
+0*

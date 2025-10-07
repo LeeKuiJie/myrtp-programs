@@ -1,0 +1,25 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Sep 10 07:38:01 2025
+[*]
+[dumpfile] "/home/kjlee_t@oppstar.local/Desktop/haha/votercircuit/voter_tb.vcd"
+[dumpfile_mtime] "Wed Sep 10 07:33:36 2025"
+[dumpfile_size] 557
+[savefile] "/home/kjlee_t@oppstar.local/Desktop/haha/votercircuit/votercircuit.gtkw"
+[timestart] 0
+[size] 1920 1029
+[pos] -911 -1
+*-5.606266 160 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] votertb.
+[sst_width] 214
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 306
+@28
+votertb.UUT.a_i
+votertb.UUT.b_i
+votertb.UUT.c_i
+@29
+votertb.UUT.v_o
+[pattern_trace] 1
+[pattern_trace] 0

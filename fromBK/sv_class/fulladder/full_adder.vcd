@@ -1,0 +1,69 @@
+$date
+	Fri Sep 19 14:58:43 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module full_adder_tb $end
+$var wire 1 ! sum_tb $end
+$var wire 1 " cout_tb $end
+$var reg 1 # a_tb $end
+$var reg 1 $ b_tb $end
+$var reg 1 % cin_tb $end
+$var integer 32 & i [31:0] $end
+$scope module dut $end
+$var wire 1 # a $end
+$var wire 1 $ b $end
+$var wire 1 % cin $end
+$var wire 1 " cout $end
+$var wire 1 ! sum $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+0%
+0$
+0#
+0"
+0!
+$end
+#10
+1!
+1%
+b1 &
+#20
+0%
+1$
+b10 &
+#30
+1"
+0!
+1%
+b11 &
+#40
+0"
+1!
+0%
+0$
+1#
+b100 &
+#50
+1"
+0!
+1%
+b101 &
+#60
+0%
+1$
+b110 &
+#70
+1!
+1%
+b111 &
+#80
+b1000 &

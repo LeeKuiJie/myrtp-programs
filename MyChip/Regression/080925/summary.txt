@@ -1,0 +1,13 @@
+Regression Summary
+==================
+Regression date          : 080925
+Total test cases         : 10
+Passed                   : 3
+Failed                   : 7
+Passing rate (%)         : 30.00
+
+Failing buckets:
+  - Error16: 2
+  - Error20: 2
+  - Error22: 2
+  - Error26: 1

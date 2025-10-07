@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.103 (w)1999-2019 BSI
+[*] Wed Sep 10 08:39:16 2025
+[*]
+[dumpfile] "/home/kjlee_t@oppstar.local/Desktop/haha/test/test.vcd"
+[dumpfile_mtime] "Wed Sep 10 08:36:29 2025"
+[dumpfile_size] 760
+[savefile] "/home/kjlee_t@oppstar.local/Desktop/haha/test/test.gtkw"
+[timestart] 0
+[size] 1920 1029
+[pos] -911 -1
+*-6.922808 400 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] test_tb.
+[sst_width] 214
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 306
+@28
+test_tb.DUT.a_i
+test_tb.DUT.b_i
+test_tb.DUT.c_i
+test_tb.DUT.d_i
+@29
+test_tb.DUT.y_o
+[pattern_trace] 1
+[pattern_trace] 0

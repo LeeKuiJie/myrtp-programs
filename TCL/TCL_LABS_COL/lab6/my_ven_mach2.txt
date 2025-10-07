@@ -1,0 +1,16 @@
+
+================ Vending Machine Simulation with TCL==============
+
+%%%%%%%%%%%%%%%%       The Items In Stock Are       %%%%%%%%%%%%%%
+
+ ----------------------------------------------------------------
+ | A0 NameXXXXXXXX    | A1 NameXXXXXXXX    | A2 NameXXXXXXXX    |
+ | Price  : RMA0 Price| Price  : RMA1 Price| Price  : RMA2 Price|
+ | Item ID: A0        | Item ID: A1        | Item ID: A2        |
+ ----------------------------------------------------------------
+ | B0 NameXXXXXXXX    | B1 NameXXXXXXXX    | B2 NameXXXXXXXX    |
+ | Price  : RMB0 Price| Price  : RMB1 Price| Price  : RMB2 Price|
+ | Item ID: B0        | Item ID: B1        | Item ID: B2        |
+ ----------------------------------------------------------------
+
+==================================================================

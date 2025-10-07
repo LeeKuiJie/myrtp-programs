@@ -1,0 +1,65 @@
+$date
+	Fri Sep 12 11:26:04 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module mux_8_to_1_tb $end
+$var wire 1 ! y_o $end
+$var reg 8 " a_i [7:0] $end
+$var reg 3 # s_i [2:0] $end
+$var integer 32 $ i [31:0] $end
+$scope module DUT $end
+$var wire 8 % a_i [7:0] $end
+$var wire 3 & s_i [2:0] $end
+$var reg 1 ! y_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 &
+b100101 %
+b0 $
+b0 #
+b100101 "
+1!
+$end
+#10
+0!
+b1 #
+b1 &
+b1 $
+#20
+1!
+b10 #
+b10 &
+b10 $
+#30
+0!
+b11 #
+b11 &
+b11 $
+#40
+b100 #
+b100 &
+b100 $
+#50
+1!
+b101 #
+b101 &
+b101 $
+#60
+0!
+b110 #
+b110 &
+b110 $
+#70
+b111 #
+b111 &
+b111 $
+#80
+b1000 $

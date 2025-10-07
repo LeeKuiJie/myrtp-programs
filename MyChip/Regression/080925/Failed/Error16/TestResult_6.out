@@ -1,0 +1,40 @@
+#TEST: downstream and upstream collision cycles
+
+
+
+Test start time: 4:13:02  09 Sep 2025
+
+Test end time:   6:15:03  09 Sep 2025
+
+Test Source: /MyChip/Testsource
+
+Test Result: /MyChip/Regression/090925
+
+Test Coverage:  /MyChip/Regression/Coverage/
+
+
+
+
+Time: 200035:  Read cycle not complete "Error16: Cycle not match with expected result".
+
+Time: 200050:  Unexpected data: A00A BEEF 2089 3357
+
+Time: 200055:  Unexpected data: 1234 BADD AEFC 2099
+
+Time: 200060:  Unexpected data: BEEF BADA 3078 1234
+
+Time: 200080:  ERROR in Read data due to missing cycle in newtext handling exception.
+
+Time: 200102:  Unexpected Halt Cycle during ack from device.
+
+Time: 200150:  Missing ending procedure. stop cycle not found.
+
+
+
+Compilation:  Success
+
+Test Final result: Failed
+
+Test Coverage :    29%
+
+Sim Time : 3:15:03
