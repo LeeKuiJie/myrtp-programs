@@ -1,9 +1,12 @@
 [submodule "my-submodule"]
 	path = CProgramming/c-day-1-LeeKuiJie
 	url = https://github.com/oti-training/c-day-1-LeeKuiJie.git
+[submodule "1my-submodule"]
 	path = CProgramming/c-dat-2-LeeKuiJie
 	url = https://github.com/oti-training/c-day-2-LeeKuiJie.git
+[submodule "2my-submodule"]
 	path = python-day-4-individual-breached-password-checker-LeeKuiJie
 	url = https://github.com/oti-training/python-day-4-individual-breached-password-checker-LeeKuiJie.git
+[submodule "3my-submodule"]
 	path = python-day-5-example
 	url = https://github.com/ubbeg2000/dawnstar-fir-model.git  
